@@ -17,7 +17,7 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.listen(port, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Nümunə proqramı Port 3000-də dinləmək!');
 });
 
 var lb = []
@@ -103,7 +103,7 @@ app.post('/sendScore', function (req, res) {
   // check if indeed a good token
   token = (req.body.score + key + 'flappy' + req.body.score).hashCode()
   if (req.body.token != token  ) {
-    console.log("error! expected " + token + ", got " + req.body.token);
+    console.log("Xəta!gözlənilən" + token + ", varlı " + req.body.token);
     res.send('OK');
     return;
   }
@@ -114,9 +114,9 @@ app.post('/sendScore', function (req, res) {
       score = parseInt(req.body.score);
       diff = new Date() - result.date
       expected = score * 1200
-      console.log('expected ' + expected + ', got ' + diff)
+      console.log('gözlənilən ' + expected + ', varlı ' + diff)
       if (diff < expected) {
-        console.log('someone is hacking!')
+        console.log('kimsə hack edir!')
         knownHackers.insert({'key': key, 'name': req.body.name, 'attemptedScore': score})
         res.send('OK');
         return;
@@ -129,7 +129,7 @@ app.post('/sendScore', function (req, res) {
       if (result != null) {
         hiscore = result['score']
       }
-      console.log('got the result. maybe add?')
+      console.log('Nəticəni aldı.Bəlkə əlavə et?')
       score = parseInt(req.body.score)
 
       if (score > hiscore) {

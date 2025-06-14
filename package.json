@@ -1,7 +1,7 @@
 {
-  "name": "flappy",
+  "name": "flappy-bird",
   "version": "0.0.1",
-  "description": "flappy bird in html5",
+  "description": "HTML5-də Flappy Bird",
   "devDependencies": {
     "gulp": "~3.5.2",
     "coffee-script": "~1.7.1",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyspace/flappy"
+    "url": "https://github.com/aliajproject/flappy-bird"
   },
   "keywords": [
     "game",
@@ -44,7 +44,7 @@
   "author": "shan zhou <hyspace@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyspace/flappy/issues"
+    "url": "https://github.com/aliajproject/flappy-bird/issues"
   },
-  "homepage": "https://github.com/hyspace/flappy"
+  "homepage": "https://github.com/aliajproject/flappy-bird"
 }

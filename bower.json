@@ -1,10 +1,10 @@
 {
-  "name": "flappy",
+  "name": "flappy-bird",
   "version": "0.0.1",
   "authors": [
-    "shan zhou <hyspace@gmail.com>"
+    "Aliyev Ali <aliyevali@itt.edu.az>"
   ],
-  "description": "flappy bird in html5",
+  "description": "flappy bird game | AzTU 2025 | ITT Fakültəsi",
   "main": "index.html",
   "keywords": [
     "game",
@@ -12,7 +12,7 @@
     "bird"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/hyspace/flappy",
+  "homepage": "https://github.com/aliajproject/flappy-bird",
   "private": true,
   "ignore": [
     "**/.*",

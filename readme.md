@@ -1,14 +1,13 @@
-#HTML5 flappy bird
+# HTML5 Flappy Bird
 
-play here: http://hyspace.io/flappy/
+Oyunu buradan oynayın: [Flappy Bird GitHub Repository](https://github.com/aliajproject/flappy-bird)
 
-based on http://uralozden.com/flappy/
+Bu layihə [aliajproject/flappy-bird](https://github.com/aliajproject/flappy-bird) reposuna əsaslanır.
 
+## Lisenziya
 
-##License
+Bu layihə MIT lisenziyası ilə təqdim olunur.
 
-MIT License
+## Müəllif Hüquqları
 
-##Copyright
-
-THE IMAGES' AND SOUNDS' COPYRIGHT IS OWNED BY THE ORIGINAL GAME'S AUTHOR.
+Oyun daxilində istifadə olunan şəkil və səslərin müəllif hüquqları orijinal oyunun müəllifinə məxsusdur.
