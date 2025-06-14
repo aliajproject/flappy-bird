@@ -1,0 +1,12 @@
+bower_components/
+node_modules/
+tmp/
+assets-backup/
+assets.zip
+tmp-assets/
+bmi.html
+dump.txt
+dump/
+simplechart.html
+viz.py
+viz.pyc

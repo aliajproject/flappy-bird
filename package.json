@@ -1,0 +1,50 @@
+{
+  "name": "flappy",
+  "version": "0.0.1",
+  "description": "flappy bird in html5",
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "coffee-script": "~1.7.1",
+    "gulp-coffee": "~1.4.1",
+    "gulp-util": "~2.2.14",
+    "gulp-connect": "~0.3.1",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.1.7"
+  },
+  "dependencies": {
+    "bower": "^1.5.2",
+    "gulp": "~3.5.2",
+    "coffee-script": "~1.7.1",
+    "gulp-coffee": "~1.4.1",
+    "gulp-util": "~2.2.14",
+    "gulp-connect": "~0.3.1",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-nodemon": "*",
+    "phaser-input": "*",
+    "express": "*",
+    "mongodb": "*",
+    "mongojs": "*",
+    "body-parser": "*",
+    "d3": "~4.0.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/gulp prod --require coffee-script/register",
+    "postinstall": "patch node_modules/phaser-input/build/phaser-input.js input.patch && bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyspace/flappy"
+  },
+  "keywords": [
+    "game",
+    "flappy",
+    "bird"
+  ],
+  "author": "shan zhou <hyspace@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyspace/flappy/issues"
+  },
+  "homepage": "https://github.com/hyspace/flappy"
+}
