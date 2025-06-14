@@ -98,8 +98,6 @@ main = ->
   numHalls = 12
   buttonList = null
   leaderboardButton = null
-  # githubHtml = """<iframe src="http://ghbtns.com/github-btn.html?user=korroktheslavemaster&repo=flappy-kgp&type=watch&count=true&size=large"
-  #   allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>"""
 
   floor = Math.floor
   randomString = (length, chars) ->
@@ -599,7 +597,7 @@ main = ->
     # enabling physics. don't know if necessary or not?
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    console.log("%chttps://github.com/korroktheslavemaster/flappy-kgp", "color: black; font-size: x-large");
+    console.log("%chttps://github.com/aliajproject/flappy-bird", "color: black; font-size: x-large");
     ratio = window.innerWidth / window.innerHeight
     # document.querySelector('#github').innerHTML = githubHtml if ratio > 1.15 or ratio < 0.7
     document.querySelector('#loading').style.display = 'none'
@@ -774,7 +772,7 @@ main = ->
     gameOverPanel.anchor.setTo 0.5, 0.5
     gameOverPanel.kill()
 
-    tryAgainText = game.add.text(0, gameOverPanel.height / 2 - 20, "Touch to Try Again",
+    tryAgainText = game.add.text(0, gameOverPanel.height / 2 - 20, "Yenidən cəhd etmək üçün toxun.\n\nVə ya Shift + Enter basın",
       font: "8px \"Press Start 2P\""
       fill: "#fff"
       stroke: "#430"
@@ -784,7 +782,7 @@ main = ->
     tryAgainText.anchor.setTo 0.5, 0.5
     gameOverPanel.addChild tryAgainText
 
-    gameOverScoreFixedTxt = game.add.text(gameOverPanel.width/4-10, -30, "Score\n\nBest",
+    gameOverScoreFixedTxt = game.add.text(gameOverPanel.width/4-10, -30, "Hesab\n\nƏn yaxşı",
       font: "24px \"04b_19regular\""
       fill: "#fff"
       stroke: "#430"
@@ -794,7 +792,7 @@ main = ->
     gameOverScoreFixedTxt.anchor.setTo 0, 0
     gameOverPanel.addChild gameOverScoreFixedTxt
 
-    lbHint = game.add.text(-gameOverPanel.width/3-60, 0, "Leader-\nboard -->",
+    lbHint = game.add.text(-gameOverPanel.width/3-60, 0, "Lider-\nLövhə -->",
       font: "6px \"Press Start 2P\""
       fill: "#fff"
       stroke: "#430"
@@ -804,7 +802,7 @@ main = ->
     lbHint.anchor.setTo 0, 0.5
     gameOverPanel.addChild lbHint
 
-    curLeaderHint = game.add.text(-gameOverPanel.width/3-20, 60, "Current\nLeader:",
+    curLeaderHint = game.add.text(-gameOverPanel.width/3-20, 60, "Cərəyan\nLider:",
       font: "8px \"Press Start 2P\""
       fill: "#fff"
       stroke: "#430"
@@ -867,7 +865,7 @@ main = ->
     gameOverPanel.addChild leaderboardButton
 
     # leading
-    nsTop = game.add.text(0, -30, "Enter Name",
+    nsTop = game.add.text(0, -30, "Adinizi yazın:",
       font: "16px \"Press Start 2P\""
       fill: "#fff"
       stroke: "#430"
@@ -876,7 +874,7 @@ main = ->
     )
     nsTop.anchor.setTo 0.5, 0.5
     nameScreenPanel.addChild(nsTop)
-    nsBot = game.add.text(0, 60, "Press Enter to continue",
+    nsBot = game.add.text(0, 60, "Davam etmək üçün Enter düyməsini basınız!\n\nVə ya Shift + Enter basın.",
       font: "8px \"Press Start 2P\""
       fill: "#fff"
       stroke: "#430"
@@ -949,7 +947,7 @@ main = ->
     # style = { font: "30px Arial", fill: "#ffffff" };  
     # hallTitleText = game.add.text(0, 0, "0", style);
     # hallTitleText = game.add.bitmapText(0, -100, 'flappyfont', "Choose your Hall", 24);
-    hallTitleText = game.add.text(0, -100, "Choose Carefully",
+    hallTitleText = game.add.text(0, -100, "Diqqətlə seçin",
       font: "30px \"04b_19regular\""
       fill: "#fff"
       stroke: "#430"
@@ -1112,8 +1110,8 @@ main = ->
     score = 0
     # credits.renderable = true
     # credits.setText "see console log\nfor github url"
-    scoreText.setText "Flappy Bird 2.2 Edition"
-    instText.setText "TOUCH TO FLY\nFLAP bird WINGS"
+    scoreText.setText "Flappy Bird 2.2 version | AzTU 2025 | ITT Fakültəsi"
+    instText.setText "Uçmaq üçün toxunun\n\nYenidən başlamaq üçün toxunun"
     gameOverText.renderable = false
     bird.smoothed = false
     bird.body.allowGravity = false
